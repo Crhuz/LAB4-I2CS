@@ -1,9 +1,3 @@
-/*
- * Esclavo_Pot.c
- *
- * Created: 6/08/2025 10:30:05
- * Author : super
- */ 
 
 #define F_CPU 16000000 
 
@@ -28,13 +22,7 @@ int main(void)
 	
     while (1) 
     {
-		
-		valueADC = ADC_read(0) >> 2;
-		if (buffer == 'L')
-		{
-			buffer = 0;
-		}
-			
+		valueADC = ADC_read(0) >> 2;		
     }
 }
 
