@@ -83,10 +83,9 @@ int main(void) {
 	
 	while(1) {
 		if(I2C_Read_Slave(SLAVE_ADDRESS1, &contador)) {
-			// contador ahora tiene el valor leído
 		}
 		_delay_ms(20);
-		// Lectura del segundo esclavo
+
 		if(I2C_Read_Slave(SLAVE_ADDRESS2, &adc)) {
 			// potenciometro ahora tiene el valor leído
 		}
